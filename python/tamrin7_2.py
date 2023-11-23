@@ -1,13 +1,15 @@
 def find(a, n):
+    notMach = True
     for i in range(n):
         for j in range(i+1, n):
 
             if a[i] + a[j] in a:
+                notMach = False
                 print(a[i], a[j])
                 break
 
-            else:
-                print('not exist')    
+    if notMach == True:
+        print('not exist')    
 
 
 n = int(input())
