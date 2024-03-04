@@ -13,6 +13,11 @@ class User(Enum):
     Student = 2
     Teacher = 3
 
+class MediaType():
+    EBook = 1
+    EMagazine = 2
+    EVideo = 3
+
 class Checkpassword():
     
     def CheckCustomerId(id):
